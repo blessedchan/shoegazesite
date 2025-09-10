@@ -192,22 +192,33 @@ footer {
 @media (max-width: 768px) {
   body {
     font-size: 16px;
-    padding: 10px;
+    padding: 0;
   }
 
   h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   h2 {
-    font-size: 1.5rem;
-    margin-top: 30px;
+    font-size: 1.4rem;
+    margin-top: 20px;
   }
 
   p {
-    font-size: 1.1rem;
-    padding: 0 10px;
+    font-size: 1rem;
     max-width: 95%;
+    padding: 0 10px;
+    text-align: justify;
+  }
+
+  .navbar,
+  .photo-box,
+  .box1,
+  .box2 {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px 10px;
+    width: 95%;
   }
 
   nav {
@@ -218,17 +229,8 @@ footer {
   nav a {
     display: block;
     margin: 10px 0;
-    font-size: 1.2rem;
-  }
-
-  .navbar,
-  .photo-box,
-  .box1,
-  .box2 {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    gap: 20px;
+    font-size: 1.1rem;
+    color: inherit;
   }
 
   .banner,
@@ -247,3 +249,4 @@ footer {
     font-size: 0.9rem;
   }
 }
+
